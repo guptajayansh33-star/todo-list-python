@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LifeTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>LifeTrack</h1>
+
+  <!-- HEALTH TRACKER -->
+  <section>
+    <h2>Health Tracker</h2>
+    <input type="number" id="water" placeholder="Water (glasses)">
+    <input type="number" id="exercise" placeholder="Exercise (min)">
+    <input type="number" id="sleep" placeholder="Sleep (hours)">
+    <button onclick="saveHealth()">Save Health</button>
+    <p id="healthData"></p>
+  </section>
+
+  <!-- GOAL TRACKER -->
+  <section>
+    <h2>Target Tracker</h2>
+    <input type="text" id="goalName" placeholder="Goal name">
+    <input type="number" id="goalTarget" placeholder="Target value">
+    <button onclick="addGoal()">Add Goal</button>
+    <ul id="goalList"></ul>
+  </section>
+
+  <!-- ROUTINE TRACKER -->
+  <section>
+    <h2>Daily Routine</h2>
+    <label><input type="checkbox"> Wake up early</label><br>
+    <label><input type="checkbox"> Yoga</label><br>
+    <label><input type="checkbox"> Study</label><br>
+    <label><input type="checkbox"> Walk</label>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
